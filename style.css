@@ -1,0 +1,386 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   
+   
+}
+body{
+    background-color: rgb(221, 216, 216);
+}
+.photo {
+    
+    height: 70px;
+ }
+.photo img{
+    height: 100%;
+    object-fit: contain;
+     overflow: hidden;
+     mix-blend-mode: multiply;
+     border-radius: 7px;
+}
+
+button{
+    background-color: white;
+    color: orange;
+    border: none;
+    font-size: large;
+    border-radius: 5px;
+    box-shadow: none;
+    padding: 5px;
+    font-weight: bolder;
+    /* outline: solid rgb(224, 156, 62) 2px; */
+}
+
+p{
+    font-weight: 500;
+    font-size: larger;
+}
+
+
+.whole{
+    padding: .5rem;
+    display: flex;
+    --ytd-rich-grid-items-per-row: 3;
+    align-items: center;
+     justify-content: space-around;
+     background-color: rgb(241, 219, 189);
+     margin-bottom: 1rem;
+     border-radius:10px;
+    border: solid rgb(235, 191, 130) 2px;
+    }
+
+
+.li,li,.ii{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+li:hover,button:hover{
+  cursor: pointer;
+}
+button:hover{
+    background-color: rgb(214, 215, 214);
+}
+.ii{
+    height: 100%;
+    width: 100%;
+    /* border: solid red; */
+    padding: 0;
+    margin: 0;
+}
+
+.list{
+    /* height: 100%; */
+    /* width: 100%; */
+    display: flex;
+    /* border: solid black; */
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+.All_card,.io{
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap:1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    /* overflow: hidden; */
+    
+}
+ .ui{
+    width: 100%;
+    height: .5rem;
+    margin-bottom: .25rem;
+ }
+
+ .skele{
+    margin-top: 20px;
+ }
+
+.skeleton{
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading{
+    0%{
+        background-color: hsl(200, 20%, 70%);
+    }
+    100%{
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+
+ 
+.card_img img{
+    display: block;
+    width: 100%;
+
+    /* overflow: hidden; */
+
+}
+.bas{
+    border: solid black;
+}
+.card_img{
+    /* overflow: hidden; */
+    /* width: 100%; */
+    /* overflow: hidden; */
+    border-radius: 9px;
+}
+.rag{
+    /* border: solid red; */
+    /* overflow: hidden; */
+        /* width: 100%; */
+        display: block;
+        border-radius: 9px;
+    
+        object-fit:cover;
+        aspect-ratio: 16/9;
+}
+.card:hover{
+    background-color: rgb(248, 215, 171);
+}
+
+
+
+.card,.cardi{
+     /* border: solid black 1px; */
+     background-color: white;
+     border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* overflow: hidden; */
+    padding: .4rem;
+     /* padding: 6px; */
+     /* transition: 2s; */
+     height: 100%;
+     width: 100%;
+     /* background-color: red; */
+     /* min-height: 300px; */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+              0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  }
+.card_img{
+    overflow: hidden;
+}
+
+.cardi{
+    min-height: 350px;
+}
+
+
+
+.sahi{
+
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+    /* display: inline; */
+}
+
+.card:hover{
+    overflow: hidden;
+    /* animation: raghib 1s ease-in-out; */
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+.filter{
+    margin-bottom: 3px;
+    display: flex;
+    gap: 14px;
+}
+
+.avatar img{
+    display: block;
+    max-width: 200px;
+    max-height: 300px;
+    object-fit: cover;
+    border: solid black 1px;
+}
+.search-btn{
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    width: 200px;
+    outline: solid rgb(182, 107, 2);
+    overflow: hidden;
+}
+.float{
+    position: absolute;
+    right: 0;
+    background: transparent;
+    top: 50%;
+    transform: translatey(-50%);
+    height: 100%;
+    font-size: small;
+    
+}
+.float:hover{
+    border-left: solid rgb(225, 158, 62) 2px;
+    background: transparent;
+   
+}
+.menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.search{
+    position: relative;
+
+    padding: 2px;
+}
+.filter{
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+
+
+
+.car{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:60em;
+}
+
+.food{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center;  */
+}
+.food h2{
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat{
+    width: 80%;
+}
+.right{
+    gap: 190px;
+    display: flex;
+    gap: 19px;
+   
+    margin-bottom: 9px;
+    padding: 9px;
+    border-radius: 9px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+    0 6px 20px rgba(0, 0, 0, 0.1);
+    outline:solid antiquewhite;
+}
+.cat-img{
+    width: 20%;
+    overflow: hidden;
+    border-radius: 9px;
+}
+
+.cat-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    border-radius: 9px;
+}
+.gap{
+    border: solid black;
+    border-radius: 9px;
+    padding: 5px;
+}
+
+
+.right:hover{
+    transform: scale(1);
+    background-color: rgb(241, 219, 189);;
+    transition: 300ms;
+    outline: solid rgb(215, 128, 8);;
+}
+.whole{
+    
+}
+
+.right:hover img{
+    transform: scale(1.2);
+    border-radius: 9px;
+    transition: 300ms;
+}
+
+.kart_item{
+    padding-left: 13rem;
+    padding-right: 13rem;
+}
+
+
+.Title{
+    border: solid darkred;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px;
+    margin-bottom: 9px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.food{
+    margin-bottom: 19px;
+    transform: 300ms;
+    
+}
+
+.cat-img{
+    position: relative;
+}
+.whole{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.cat-img button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    /* transform: translateY(50%); */
+    transform: translateX(-50%);
+    padding: 9px;
+}
+
+.food-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  
+.work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13rem;
+    margin-right: 13rem;
+}
