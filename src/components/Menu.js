@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Category from "./Category.js";
+import Category from "./category.js";
+import Res_card from "./Res_card.js";
 const Menu = () => {
     const [resInfo, setResInfo] = useState(null);
     const [item, setItem] = useState(null);
@@ -56,10 +57,13 @@ const Menu = () => {
     if (!item) return <h1>Menu not available...</h1>;
 
 
-    const { name, cuisines, costForTwoMessage } = resInfo?.cards?.[2]?.card?.card?.info;
-
+    const { name, cuisines, costForTwoMessage,avgRating } = resInfo?.cards?.[2]?.card?.card?.info;
+    console.log(resInfo?.cards?.[2]?.card?.card?.info);
+    
     return (
+        
         <div className="menu">
+                <Res_card prop={resInfo?.cards?.[2]?.card?.card?.info}/>
             <h1>{name}</h1>
             <h2>{cuisines?.join(", ")}  - {costForTwoMessage}</h2>
            

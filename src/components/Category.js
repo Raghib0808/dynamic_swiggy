@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Food from "./Food_items";
 const Category = ({ data, showIndex,setShowIndex,palkia}) => {
-    // console.log(palkia);
+    console.log(data);
   const handleclick=()=>{
     if(showIndex==false)
     setShowIndex(true);

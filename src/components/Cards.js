@@ -14,8 +14,7 @@ const Cards = (props) => {
                </p>
            
                <p>
-                  
-                   {cuisines.join(", ")}
+                    {cuisines.join(", ")}
                </p>
            <p>
                Rating: {avgRating}

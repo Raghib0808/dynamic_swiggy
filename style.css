@@ -7,7 +7,7 @@
    
 }
 body{
-    background-color: rgb(221, 216, 216);
+    background-color: white;
 }
 .photo {
     
@@ -45,10 +45,15 @@ p{
     --ytd-rich-grid-items-per-row: 3;
     align-items: center;
      justify-content: space-around;
-     background-color: rgb(241, 219, 189);
+     background-color: white;
      margin-bottom: 1rem;
      border-radius:10px;
-    border: solid rgb(235, 191, 130) 2px;
+   border: solid whitesmoke;
+    }
+
+    .easy_img img:hover{
+        transition-duration: 300ms;
+        transform: scale(1.09);
     }
 
 
@@ -83,11 +88,19 @@ button:hover{
     justify-content: center;
     gap: 3rem;
 }
-
-
-.All_card,.io{
+.io{
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap:1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+
+.All_card{
     margin-top: 40px;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap:1.5rem;
     margin-left: 2rem;
@@ -107,6 +120,7 @@ button:hover{
  }
 
 .skeleton{
+    width: 100%;
     animation: skeleton-loading 1s linear infinite alternate;
 }
 
@@ -120,7 +134,7 @@ button:hover{
 }
 
  
-.card_img img{
+.card_img img,.rag{
     display: block;
     width: 100%;
 
@@ -139,7 +153,7 @@ button:hover{
 .rag{
     /* border: solid red; */
     /* overflow: hidden; */
-        /* width: 100%; */
+        width: 100%;
         display: block;
         border-radius: 9px;
     
@@ -192,6 +206,10 @@ button:hover{
     padding: 0;
     margin: 0;
     /* display: inline; */
+}
+.wel{
+    animation: skeleton-loading 1s linear infinite alternate;
+
 }
 
 .card:hover{
@@ -377,10 +395,123 @@ button:hover{
     transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
   }
   
-.work{
+
+  .work{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 13rem;
-    margin-right: 13rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60rem; 
+    flex-direction: column;
+}
+
+.akg{
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    gap: 20px;
+
+}
+
+
+
+.easy_img {
+    width: 144px;
+   flex-shrink: 0;
+   height: 180px;
+   overflow: hidden;
+   
+}
+
+.easy_img img{
+   
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/8;
+    object-fit:cover;
+    height: 100%;
+ 
+}
+/* .easy_img img{
+  border: solid red;
+} */
+.easy_whole{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    
+ }
+.easyf{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle button{
+    margin-right: 1rem;
+}
+.toggle button:hover{
+    color: white;
+    background-color: orange
+}
+
+
+.start_first{
+    width: 100%;
+    height: 400px;
+}
+
+
+.outlet,.Res_card{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 9px;
+    flex-direction: column;
+}
+
+.gola{
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: rgb(196, 196, 196);
+}
+
+.arbok{
+        width: 1px;
+        height: 23px;
+        background: rgb(196, 196, 196);
+}
+
+.line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.ek{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.Res_card{
+
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #333;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8), -10px -10px 20px rgba(50, 50, 50, 0.3);
+    border-radius: 10px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

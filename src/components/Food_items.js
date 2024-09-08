@@ -29,10 +29,11 @@ const Food = ({ item, inc }) => {
         dispatch(addItem(item));
     };
 
-    if(item.length==0)return(<h1>looks the cart is empty</h1> )
+    if(item.length==0)return(<h1>Looks Like the cart is empty</h1> )
 
     return (
         <div className="gap">
+          
             {item.map((cat, index) => (
                 <div key={index} className="right">
                     <div className="cat">

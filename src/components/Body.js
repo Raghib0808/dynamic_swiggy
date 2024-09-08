@@ -3,6 +3,9 @@ import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer.js";
 import { Link } from "react-router-dom";
 import onlineStatus from "../Utility/onlineStatus.js";
+import ContactUs from  "./ContactUs.js"
+import Better from "./Better.js";
+
 
 const   Body=()=>{
      
@@ -63,6 +66,7 @@ const   Body=()=>{
  }
     return(
         <div>
+          <ContactUs />
         <div className="filter">
          
            <div className="search">
