@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Category from "./category.js";
+import Category from "./Category.js";
 import Res_card from "./Res_card.js";
 const Menu = () => {
     const [resInfo, setResInfo] = useState(null);
